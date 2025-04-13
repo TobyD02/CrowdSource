@@ -8,6 +8,5 @@
 /dataSources.local.xml
 
 *.xml
-CrowdSourced.iml
 
 __pycache__
