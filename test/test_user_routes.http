@@ -1,0 +1,11 @@
+### Find User
+GET http://127.0.0.1:8000/app/api/user/some_username
+
+### Create User
+POST http://127.0.0.1:8000/app/api/user
+Content-Type: application/json
+
+{
+  "username": "this is my username",
+  "password": "this is my password"
+}

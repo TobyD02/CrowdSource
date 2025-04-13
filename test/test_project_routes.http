@@ -1,0 +1,10 @@
+### Find Project
+GET http://127.0.0.1:8000/app/api/project/some_project_name
+
+### Create Project
+POST http://127.0.0.1:8000/app/api/project
+Content-Type: application/json
+
+{
+  "project_name": "this is a project name"
+}
