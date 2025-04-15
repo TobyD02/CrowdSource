@@ -1,0 +1,11 @@
+### Find User
+GET http://127.0.0.1:8000/app/api/discussion/some_discussion_name
+
+### Create User
+POST http://127.0.0.1:8000/app/api/discussion
+Content-Type: application/json
+
+{
+  "discussion_name": "this is my discussion about a project",
+  "project_id": "someprojectid"
+}
