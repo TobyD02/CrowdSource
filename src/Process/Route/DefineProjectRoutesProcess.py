@@ -16,10 +16,11 @@ class DefineProjectRoutesProcess(AbstractDefineRoutesProcess):
         self.project_controller: ProjectController = ProjectController()
         self.config_provider: ConfigProvider = ConfigProvider()
 
-    def register_routes(self: Self) -> Self:
-        return self \
-            .register_find_project_by_project_route() \
+    def execute(self: Self) -> APIRouter:
+        self.register_find_project_by_project_route() \
             .register_create_project_route()
+
+        return self.get_router()
 
     def register_find_project_by_project_route(self: Self) -> Self:
         @self.get_router().get(

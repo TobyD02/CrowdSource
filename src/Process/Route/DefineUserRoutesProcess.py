@@ -16,10 +16,11 @@ class DefineUserRoutesProcess(AbstractDefineRoutesProcess):
         self.user_controller: UserController = UserController()
         self.config_provider: ConfigProvider = ConfigProvider()
 
-    def register_routes(self: Self) -> Self:
-        return self \
-            .register_create_user_route() \
+    def execute(self: Self) -> APIRouter:
+        self.register_create_user_route() \
             .register_find_user_by_username_route()
+
+        return self.get_router()
 
     def register_find_user_by_username_route(self: Self) -> Self:
         @self.get_router().get(

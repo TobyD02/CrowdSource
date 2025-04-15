@@ -1,3 +1,4 @@
 from .DefineUserRoutesProcess import DefineUserRoutesProcess
 from .DefineProjectRoutesProcess import DefineProjectRoutesProcess
+from .DefineDiscussionRoutesProcess import DefineDiscussionRoutesProcess
 from .AbstractDefineRoutesProcess import AbstractDefineRoutesProcess

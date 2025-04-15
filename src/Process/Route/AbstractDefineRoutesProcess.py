@@ -1,14 +1,12 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from typing_extensions import Self
+
+from src.Process import AbstractProcess
 
 from fastapi import APIRouter
 
-class AbstractDefineRoutesProcess(ABC):
+class AbstractDefineRoutesProcess(AbstractProcess):
 
     @abstractmethod
-    def register_routes(self: Self) -> Self:
-        pass
-
-    @abstractmethod
-    def get_router(self: Self) -> APIRouter:
+    def execute(self: Self) -> APIRouter:
         pass
