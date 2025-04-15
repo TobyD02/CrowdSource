@@ -6,7 +6,9 @@ asthetics. All polish can be done when a final product/mvp is implemented**
 - [ ] Design / mock data structures and models required for an MVP
     - Also, how will this be reflected in the code. Different between db schema models and api request and response
       models etc...
-- [ ] Decide on a database (document makes sense -> maybe mongo etc...)
+    - Basic controllers, services and process should be implemented
+- [ ] Decide on a database (document makes sense -> maybe mongo, elastic search for a search engine? some combination?
+  etc...)
     - This relates to models/data structures as will have to think about schemas etc...
 - [ ] Build services for controller methods.
     - This will mainly be connecting api endpoints to database data
